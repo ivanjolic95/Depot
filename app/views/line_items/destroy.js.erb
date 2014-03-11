@@ -1,0 +1,4 @@
+$("tr:has('#<%= @removed_id %>')").fadeOut(500);
+$(".total_cell").html("<%= number_to_currency(@cart.total_price) %>");
+
+if($("#cart tr:visible").size()==2) $("#cart").fadeOut(500);
